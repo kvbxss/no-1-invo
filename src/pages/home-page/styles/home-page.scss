@@ -1,0 +1,176 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+/// 
+/// 
+
+
+#home-page {
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 100px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 48px 16px ;
+
+
+    }
+        
+    
+}
+
+.header-container {
+
+    width: 50%;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media screen and (max-width: 1100px) {
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 50px;
+    }
+    
+
+    & &__text-wrapper {
+        height: 300px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 24px;
+
+        @media screen and (max-width: 1100px) {
+            width: 700px;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin: 100px;
+        }
+
+    }
+}
+
+
+
+.cards-container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    padding: 0 50px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 24px;
+    
+
+    @media screen and (max-width: 1100px) {
+        width: 100%;
+        grid-template-columns: 350px 350px;
+        grid-gap: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 100%;
+        grid-gap: 24px;
+
+    }
+
+    :hover {
+        background: #272D42;
+        opacity: 0.5;
+        transition: 0.5s;
+
+        .cards-text {
+            opacity: 1;
+        }  
+    }
+
+    & &__card {
+        background: #272D42 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 24px;
+        text-align: center;
+        gap: 16px;
+        padding: 24px;
+        height: 300px;
+
+
+        @media screen and (max-width: 1100px) {
+            border-radius: 16px;
+        }
+
+
+        .cards-text {
+            padding: 0 50px;
+            opacity: 0.5;
+            overflow: hidden;
+        }
+
+
+
+        #one {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background-color: rgba(202, 89, 255, .2);
+            border-radius: 20px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        #two {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background-color: rgba(108, 124, 255, .2);
+            border-radius: 20px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        #three {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background-color: rgba(42, 255, 255, .2);
+            border-radius: 20px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        #four {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background-color: rgba(255, 246, 41, .2);
+            border-radius: 20px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+
+    }
+}
